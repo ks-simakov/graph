@@ -17,7 +17,9 @@
 		E7B408AC17F1E18000345F20 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B408AB17F1E18000345F20 /* Default@2x.png */; };
 		E7B408AE17F1E18000345F20 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B408AD17F1E18000345F20 /* Default-568h@2x.png */; };
 		E7B408B117F1E18000345F20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B408B017F1E18000345F20 /* ViewController.m */; };
-		E7B408B417F1E18000345F20 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B408B217F1E18000345F20 /* ViewController.xib */; };
+		E7B408BB17F1E7F800345F20 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B408BA17F1E7F800345F20 /* QuartzCore.framework */; };
+		E7B408BE17F1EB3A00345F20 /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B408BD17F1EB3A00345F20 /* GraphView.m */; };
+		E7D3CC1D187E479F00EB4358 /* cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E7D3CC1C187E479F00EB4358 /* cat.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +38,10 @@
 		E7B408AD17F1E18000345F20 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E7B408AF17F1E18000345F20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E7B408B017F1E18000345F20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E7B408B317F1E18000345F20 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E7B408BA17F1E7F800345F20 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E7B408BC17F1EB3A00345F20 /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		E7B408BD17F1EB3A00345F20 /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		E7D3CC1C187E479F00EB4358 /* cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B408BB17F1E7F800345F20 /* QuartzCore.framework in Frameworks */,
 				E7B4089817F1E18000345F20 /* UIKit.framework in Frameworks */,
 				E7B4089A17F1E18000345F20 /* Foundation.framework in Frameworks */,
 				E7B4089C17F1E18000345F20 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,7 @@
 		E7B4089617F1E18000345F20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7B408BA17F1E7F800345F20 /* QuartzCore.framework */,
 				E7B4089717F1E18000345F20 /* UIKit.framework */,
 				E7B4089917F1E18000345F20 /* Foundation.framework */,
 				E7B4089B17F1E18000345F20 /* CoreGraphics.framework */,
@@ -83,12 +90,14 @@
 		E7B4089D17F1E18000345F20 /* graph */ = {
 			isa = PBXGroup;
 			children = (
+				E7D3CC1C187E479F00EB4358 /* cat.jpeg */,
 				E7B408A617F1E18000345F20 /* AppDelegate.h */,
 				E7B408A717F1E18000345F20 /* AppDelegate.m */,
 				E7B408AF17F1E18000345F20 /* ViewController.h */,
 				E7B408B017F1E18000345F20 /* ViewController.m */,
-				E7B408B217F1E18000345F20 /* ViewController.xib */,
 				E7B4089E17F1E18000345F20 /* Supporting Files */,
+				E7B408BC17F1EB3A00345F20 /* GraphView.h */,
+				E7B408BD17F1EB3A00345F20 /* GraphView.m */,
 			);
 			path = graph;
 			sourceTree = "<group>";
@@ -160,9 +169,9 @@
 			files = (
 				E7B408A217F1E18000345F20 /* InfoPlist.strings in Resources */,
 				E7B408AA17F1E18000345F20 /* Default.png in Resources */,
+				E7D3CC1D187E479F00EB4358 /* cat.jpeg in Resources */,
 				E7B408AC17F1E18000345F20 /* Default@2x.png in Resources */,
 				E7B408AE17F1E18000345F20 /* Default-568h@2x.png in Resources */,
-				E7B408B417F1E18000345F20 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				E7B408A417F1E18000345F20 /* main.m in Sources */,
 				E7B408A817F1E18000345F20 /* AppDelegate.m in Sources */,
 				E7B408B117F1E18000345F20 /* ViewController.m in Sources */,
+				E7B408BE17F1EB3A00345F20 /* GraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +198,6 @@
 				E7B408A117F1E18000345F20 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E7B408B217F1E18000345F20 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7B408B317F1E18000345F20 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,7 +263,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "graph/graph-Prefix.pch";
 				INFOPLIST_FILE = "graph/graph-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,7 +276,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "graph/graph-Prefix.pch";
 				INFOPLIST_FILE = "graph/graph-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -296,6 +302,7 @@
 				E7B408B917F1E18000345F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
