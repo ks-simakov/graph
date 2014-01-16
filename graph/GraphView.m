@@ -179,7 +179,7 @@ int graphLineWidth = 2;
     
     CGMutablePathRef axis = CGPathCreateMutable();
     CGPathMoveToPoint(axis, nil, _verticalAxisX, _horizontalAxisY);
-    CGPathAddLineToPoint(axis, nil, viewRect.size.width, _horizontalAxisY);
+    CGPathAddLineToPoint(axis, nil, self.contentSize.width, _horizontalAxisY);
     
     horizontalAxisLayer.path = axis;
 }
@@ -275,7 +275,7 @@ int graphLineWidth = 2;
     graphPath = CGPathCreateMutableCopy(newGraphPath);
     
     curX += _xStepSize;
-    if (curX >= viewRect.size.width) {
+    if (curX >= self.contentSize.width) {
         float value = [[visibleValues lastObject] floatValue];
         [visibleValues removeAllObjects];
         [visibleValues addObject:[NSNumber numberWithFloat:value]];
