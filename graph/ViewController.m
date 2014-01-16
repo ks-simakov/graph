@@ -21,16 +21,17 @@ int value = 0;
     CGRect viewRect = [[UIScreen mainScreen] bounds];
     
     UIView *view = [[[UIView alloc] initWithFrame:viewRect] autorelease];
-    view.backgroundColor = [UIColor colorWithRed:0.241 green:0.869 blue:0.558 alpha:1.000];
+    view.backgroundColor = [UIColor blackColor];
     
     graphView = [[GraphView alloc] initWithFrame:CGRectMake(0, 75, viewRect.size.width, viewRect.size.height - 150)];
+    [graphView setContentSize:CGSizeMake(viewRect.size.width*3, viewRect.size.height)];
     graphView.xStepSize = 3;
     graphView.yStepSize = 1;
     graphView.horizontalAxisY = -1;                     // Y-координата оси X (если -1, то будет посередине)
     graphView.verticalAxisX = 10;                       // X-координата оси Y (по-умолчанию 5)
     graphView.fps = 15;                                 // Скорость отрисовки графика (frames per second)
     graphView.flexibleMax = YES;                        // Автоматическое масштабирование графика, если значения выходят за пределы графика
-    graphView.backgroundColor = [UIColor grayColor];     // Цвет фона графика
+    graphView.backgroundColor = [UIColor blackColor];     // Цвет фона графика
 //    graphView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed: @"cat.jpeg"]];         // Картинка на фоне графика
     graphView.horizontalAxisVisible = YES;              // Видимость оси Х
     graphView.verticalAxisVisible = YES;                // Видимость оси Y
@@ -59,8 +60,8 @@ int value = 0;
 
 -(void)generateData
 {
-    int maxRandom = 20;
-    int minRandom = -20;
+    int maxRandom = 50;
+    int minRandom = -50;
     
     value += rand() % (maxRandom - minRandom) + minRandom;
     

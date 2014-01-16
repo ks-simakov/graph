@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface GraphView : UIView
+@interface GraphView : UIScrollView
 {
     CALayer	*rootLayer;
     
